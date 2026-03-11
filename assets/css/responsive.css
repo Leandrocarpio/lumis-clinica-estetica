@@ -1,0 +1,305 @@
+/* ============================================================
+   RESPONSIVE.CSS — Breakpoints Mobile-First
+   Lumis Clínica Estética · Portfolio Project
+   ============================================================ */
+
+/* ── TABLET: hasta 1024px ─────────────────────────────────── */
+@media (max-width: 1024px) {
+
+  /* Tratamientos: 2 columnas */
+  .s-treatments__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Footer: 2 columnas */
+  .footer__inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+
+  /* Grilla equipo */
+  .s-team__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+
+  /* Benefits stat card: reposicionar */
+  .s-benefits__stat {
+    left: -16px;
+    top: 20px;
+  }
+
+  /* Value accent */
+  .s-value__accent {
+    right: -16px;
+    bottom: -16px;
+  }
+}
+
+/* ── TABLET CHICO / MOBILE GRANDE: hasta 768px ────────────── */
+@media (max-width: 768px) {
+
+  :root {
+    --space-2xl: 72px;
+    --space-xl:  48px;
+    --navbar-h:  68px;
+  }
+
+  /* Navbar: ocultar links y actions, mostrar hamburger */
+  .navbar__links,
+  .navbar__actions {
+    display: none !important;
+  }
+
+  .navbar__hamburger {
+    display: flex;
+  }
+
+  /* Hero: usar svh y reposicionar imagen para mobile */
+  .hero {
+    height: 100svh;
+    min-height: 580px;
+  }
+
+  .hero__bg {
+    /*
+      En mobile usamos object-position top center para que el sujeto
+      (generalmente en la parte superior del cuadro) no se pierda.
+      La imagen se adapta sin zoom forzado gracias a background-size: cover
+      combinado con background-position top center.
+    */
+    background-position: top center;
+  }
+
+  .hero__title {
+    font-size: clamp(2.5rem, 9vw, 4rem);
+  }
+
+  .hero__subtitle {
+    font-size: 0.95rem;
+  }
+
+  .hero__btns {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero__btns .btn {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+  }
+
+  .hero__trust {
+    display: none; /* Se oculta en mobile para limpiar el hero */
+  }
+
+  /* Grillas: 1 columna */
+  .s-value__grid,
+  .s-benefits__inner,
+  .s-facilities__inner,
+  .s-faq__inner,
+  .s-contact__inner {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  /* Imágenes de sección: altura reducida en mobile */
+  .s-value__img {
+    height: 340px;
+  }
+
+  .s-benefits__img {
+    height: 360px;
+  }
+
+  /* Accent y stat cards: reposicionar para no salirse */
+  .s-value__accent {
+    right: 0;
+    bottom: -16px;
+  }
+
+  .s-benefits__stat {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin-top: 16px;
+    display: inline-block;
+  }
+
+  /* Tratamientos: 1 columna */
+  .s-treatments__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .s-treatments__head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  /* Equipo: 1 columna */
+  .s-team__grid {
+    grid-template-columns: 1fr;
+    max-width: 380px;
+    margin: 0 auto;
+  }
+
+  /* Instalaciones: galería apilada */
+  .s-facilities__gallery {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 160px 160px;
+  }
+
+  .gallery-item--tall {
+    grid-row: span 1;
+  }
+
+  /* Testimonios: 1 columna */
+  .s-testimonials__grid {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  /* CTA botones */
+  .s-cta__btns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .s-cta__btns .btn {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* FAQ: orden visual */
+  .s-faq__inner {
+    gap: 40px;
+  }
+
+  /* Contact */
+  .s-contact__map iframe {
+    height: 240px;
+  }
+
+  /* Footer */
+  .footer__inner {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer__legal {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  /* WhatsApp float: ajustar en mobile */
+  .wa-float {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .wa-float__tooltip {
+    display: none; /* Ocultar tooltip en mobile para no tapar contenido */
+  }
+}
+
+/* ── MOBILE PEQUEÑO: hasta 480px ─────────────────────────── */
+@media (max-width: 480px) {
+
+  :root {
+    --space-2xl: 56px;
+  }
+
+  .container {
+    padding: 0 18px;
+  }
+
+  .hero__title {
+    font-size: 2.5rem;
+  }
+
+  /* Instalaciones: 1 columna en pantallas muy pequeñas */
+  .s-facilities__gallery {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .s-facilities__gallery .gallery-item {
+    height: 200px;
+  }
+
+  /* Team: asegurar que no se rompa */
+  .s-team__grid {
+    max-width: 100%;
+  }
+
+  /* Tratamientos: imagen un poco más baja */
+  .treatment-card__img-wrap {
+    height: 200px;
+  }
+
+  .treatment-card__img {
+    height: 200px;
+  }
+
+  /* CTA */
+  .s-cta__title {
+    font-size: 2rem;
+  }
+
+  /* Footer social */
+  .footer__social {
+    gap: 8px;
+  }
+
+  .wa-float__btn {
+    width: 52px;
+    height: 52px;
+    font-size: 1.3rem;
+  }
+}
+
+/* ── HOVER: dispositivos con hover real ───────────────────── */
+/* Desactivar hover states en touch devices */
+@media (hover: none) {
+  .treatment-card:hover,
+  .team-card:hover,
+  .testimonial-card:hover,
+  .value-feature:hover,
+  .benefit-item:hover,
+  .facility-tag:hover {
+    transform: none;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .gallery-item:hover img {
+    transform: none;
+  }
+}
+
+/* ── REDUCIR MOVIMIENTO: accesibilidad ────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .hero__bg {
+    animation: none;
+    transform: scale(1);
+  }
+
+  .fade-up,
+  .stagger > * {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .wa-float__pulse {
+    animation: none;
+  }
+}

@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO básico -->
+  <meta name="description" content="Lumis Clínica Estética en Mendoza — Medicina estética avanzada con respaldo médico certificado. Tratamientos personalizados, resultados naturales. Consultá hoy." />
+  <meta name="keywords" content="clínica estética Mendoza, medicina estética, botox Mendoza, rellenos faciales, rejuvenecimiento, bienestar" />
+  <meta name="author" content="Lumis Clínica Estética" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Lumis Clínica Estética — Tu mejor versión, con respaldo médico" />
+  <meta property="og:description" content="Medicina estética avanzada en Mendoza. Tratamientos personalizados con tecnología de última generación." />
+  <meta property="og:locale"      content="es_AR" />
+
+  <title>Lumis Clínica Estética — Medicina estética avanzada en Mendoza</title>
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- CSS modular -->
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+<body>
+
+  <!-- =====================================================
+       WHATSAPP FLOTANTE
+       Mensaje predefinido al abrir la app
+  ====================================================== -->
+  <a
+    href="https://wa.me/5492612000000?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20informaci%C3%B3n%20sobre%20los%20tratamientos%20de%20Lumis%20Cl%C3%ADnica%20Est%C3%A9tica."
+    class="wa-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar por WhatsApp"
+  >
+    <span class="wa-float__tooltip">¿Hablamos por WhatsApp?</span>
+    <span class="wa-float__btn">
+      <span class="wa-float__pulse" aria-hidden="true"></span>
+      <i class="bi bi-whatsapp"></i>
+    </span>
+  </a>
+
+  <!-- =====================================================
+       MENÚ MÓVIL
+  ====================================================== -->
+  <nav
+    id="mobileMenu"
+    class="mobile-menu"
+    aria-label="Menú de navegación móvil"
+    aria-hidden="true"
+  >
+    <div class="mobile-menu__links">
+      <a href="#tratamientos" class="mobile-menu__link">
+        Tratamientos <i class="bi bi-arrow-right"></i>
+      </a>
+      <a href="#equipo" class="mobile-menu__link">
+        Equipo médico <i class="bi bi-arrow-right"></i>
+      </a>
+      <a href="#instalaciones" class="mobile-menu__link">
+        Instalaciones <i class="bi bi-arrow-right"></i>
+      </a>
+      <a href="#testimonios" class="mobile-menu__link">
+        Testimonios <i class="bi bi-arrow-right"></i>
+      </a>
+      <a href="#contacto" class="mobile-menu__link">
+        Contacto <i class="bi bi-arrow-right"></i>
+      </a>
+    </div>
+
+    <div class="mobile-menu__actions">
+      <a
+        href="https://wa.me/5492612000000?text=Hola%2C%20quiero%20reservar%20una%20consulta%20en%20Lumis%20Cl%C3%ADnica%20Est%C3%A9tica."
+        class="btn btn--whatsapp"
+        target="_blank"
+        rel="noopener noreferrer"
+        onclick="window.lumis && window.lumis.closeMenu()"
+      >
+        <i class="bi bi-whatsapp"></i>
+        Reservar por WhatsApp
+      </a>
+      <a href="#contacto" class="btn btn--outline-dark" onclick="window.lumis && window.lumis.closeMenu()">
+        <i class="bi bi-calendar3"></i>
+        Solicitar turno
+      </a>
+    </div>
+
+    <div class="mobile-menu__footer">
+      <a href="https://instagram.com/lumisclinica" class="mobile-menu__social" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-instagram"></i> Instagram
+      </a>
+      <a href="https://facebook.com/lumisclinica" class="mobile-menu__social" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-facebook"></i> Facebook
+      </a>
+    </div>
+  </nav>
+
+  <!-- =====================================================
+       NAVBAR
+  ====================================================== -->
+  <header id="navbar" class="navbar" role="banner">
+    <div class="container navbar__inner">
+
+      <a href="#" class="navbar__logo" aria-label="Lumis Clínica Estética — Inicio">
+        Lumis<span>.</span>
+      </a>
+
+      <nav aria-label="Navegación principal">
+        <ul class="navbar__links">
+          <li><a href="#tratamientos">Tratamientos</a></li>
+          <li><a href="#equipo">Equipo</a></li>
+          <li><a href="#instalaciones">Instalaciones</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="navbar__actions">
+        <a
+          href="https://wa.me/5492612000000?text=Hola%2C%20quiero%20reservar%20una%20consulta%20en%20Lumis."
+          class="btn btn--sm btn--whatsapp"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-whatsapp"></i> WhatsApp
+        </a>
+        <a href="#contacto" class="btn btn--sm btn--primary">Reservar turno</a>
+      </div>
+
+      <button
+        id="hamburger"
+        class="navbar__hamburger"
+        aria-label="Abrir menú de navegación"
+        aria-expanded="false"
+        aria-controls="mobileMenu"
+      >
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================================================
+         HERO — PANTALLA COMPLETA
+         svh = descuenta barra del navegador en mobile
+         object-position top center = conserva foco en mobile
+    ==================================================== -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+
+      <div
+        class="hero__bg"
+        role="img"
+        aria-label="Consultorio estético premium, luz natural elegante"
+      ></div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="hero__deco-line" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero__content">
+
+          <p class="hero__eyebrow">
+            Medicina Estética Certificada · Mendoza
+          </p>
+
+          <h1 class="hero__title" id="hero-title">
+            Tu mejor versión,<br>
+            con <em>respaldo</em><br>
+            médico real.
+          </h1>
+
+          <p class="hero__subtitle">
+            Tratamientos personalizados con tecnología de última generación.
+            Resultados naturales que se ven, se sienten y duran.
+          </p>
+
+          <div class="hero__btns">
+            <a href="#contacto" class="btn btn--primary">
+              <i class="bi bi-calendar-check"></i>
+              Consulta gratuita
+            </a>
+            <a
+              href="https://wa.me/5492612000000?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20sobre%20sus%20tratamientos."
+              class="btn btn--outline-light"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="bi bi-whatsapp"></i>
+              Hablar por WhatsApp
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Métricas de confianza -->
+      <div class="hero__trust" aria-label="Estadísticas de la clínica">
+        <div class="trust-bar">
+          <div class="trust-item">
+            <span class="trust-item__number" data-count="2800" data-suffix="+">2800+</span>
+            <span class="trust-item__label">Pacientes atendidos</span>
+          </div>
+          <div class="trust-divider" role="separator" aria-hidden="true"></div>
+          <div class="trust-item">
+            <span class="trust-item__number" data-count="12">12</span>
+            <span class="trust-item__label">Años de trayectoria</span>
+          </div>
+          <div class="trust-divider" role="separator" aria-hidden="true"></div>
+          <div class="trust-item">
+            <span class="trust-item__number" data-count="98" data-suffix="%">98%</span>
+            <span class="trust-item__label">Pacientes satisfechos</span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ===================================================
+         PROPUESTA DE VALOR
+    ==================================================== -->
+    <section class="s-value" aria-labelledby="value-title">
+      <div class="container">
+        <div class="s-value__grid">
+
+          <!-- Imagen -->
+          <div class="s-value__img-wrap fade-up">
+            <img
+              src="assets/img/maquinas.png"
+              alt="Consultorio médico estético moderno de Lumis Clínica"
+              class="s-value__img"
+              loading="lazy"
+            />
+
+            <!-- Tarjeta accent flotante -->
+            <div class="s-value__accent">
+              <div class="accent-card">
+                <div class="accent-card__icon">
+                  <i class="bi bi-patch-check-fill"></i>
+                </div>
+                <div>
+                  <span class="accent-card__title">Resultados naturales</span>
+                  <span class="accent-card__sub">Visibles desde la primera sesión</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contenido -->
+          <div class="fade-up delay-1">
+            <span class="section-label">Nuestra filosofía</span>
+            <h2 class="section-title" id="value-title">
+              Medicina estética<br>
+              con <em>criterio clínico</em>
+            </h2>
+            <p class="section-subtitle">
+              Cada persona es única. Por eso no existen protocolos genéricos en Lumis:
+              cada tratamiento comienza con un diagnóstico médico real y termina con
+              resultados que potencian lo mejor de vos, sin transformarte en otra persona.
+            </p>
+
+            <div class="s-value__features">
+
+              <div class="value-feature">
+                <div class="value-feature__icon">
+                  <i class="bi bi-clipboard2-pulse"></i>
+                </div>
+                <div>
+                  <span class="value-feature__title">Diagnóstico médico siempre incluido</span>
+                  <span class="value-feature__desc">
+                    Antes de cualquier procedimiento evaluamos tu historial clínico, tu piel
+                    y tus objetivos. Nada se improvisa.
+                  </span>
+                </div>
+              </div>
+
+              <div class="value-feature">
+                <div class="value-feature__icon">
+                  <i class="bi bi-shield-check"></i>
+                </div>
+                <div>
+                  <span class="value-feature__title">Solo productos con certificación ANMAT</span>
+                  <span class="value-feature__desc">
+                    Trabajamos exclusivamente con materiales aprobados por autoridades sanitarias.
+                    Tu seguridad no es negociable.
+                  </span>
+                </div>
+              </div>
+
+              <div class="value-feature">
+                <div class="value-feature__icon">
+                  <i class="bi bi-stars"></i>
+                </div>
+                <div>
+                  <span class="value-feature__title">Tecnología de última generación</span>
+                  <span class="value-feature__desc">
+                    Equipos certificados y técnicas actualizadas para resultados seguros,
+                    predecibles y duraderos.
+                  </span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         TRATAMIENTOS
+    ==================================================== -->
+    <section class="s-treatments" id="tratamientos" aria-labelledby="treatments-title">
+      <div class="container">
+
+        <div class="s-treatments__head fade-up">
+          <div>
+            <span class="section-label">Tratamientos</span>
+            <h2 class="section-title" id="treatments-title">
+              Soluciones reales<br>
+              para <em>cada objetivo</em>
+            </h2>
+          </div>
+          <a href="#contacto" class="btn btn--outline-dark">
+            Ver todos <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="s-treatments__grid stagger">
+
+          <!-- Tratamiento 1 -->
+          <article class="treatment-card">
+            <div class="treatment-card__img-wrap">
+              <img
+                src="assets/img/facial.png"
+                alt="Tratamiento de rejuvenecimiento facial en Lumis"
+                class="treatment-card__img"
+                loading="lazy"
+              />
+            </div>
+            <div class="treatment-card__body">
+              <span class="tag">Más solicitado</span>
+              <h3 class="treatment-card__name">Rejuvenecimiento facial</h3>
+              <p class="treatment-card__desc">
+                Protocolo combinado de bioestimulación e hidratación profunda que devuelve
+                luminosidad, firmeza y uniformidad al rostro. Sin cirugía, sin tiempo de recuperación.
+                El cambio se nota, la intervención no.
+              </p>
+              <div class="treatment-card__footer">
+                <span class="treatment-card__duration">
+                  <i class="bi bi-clock"></i> 60–90 min
+                </span>
+                <a href="#contacto" class="treatment-card__link">
+                  Consultar <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tratamiento 2 -->
+          <article class="treatment-card">
+            <div class="treatment-card__img-wrap">
+              <img
+                src="assets/img/ácido hialurónico.png"
+                alt="Rellenos con ácido hialurónico en Lumis Clínica"
+                class="treatment-card__img"
+                loading="lazy"
+              />
+            </div>
+            <div class="treatment-card__body">
+              <span class="tag">Rellenos</span>
+              <h3 class="treatment-card__name">Ácido hialurónico</h3>
+              <p class="treatment-card__desc">
+                Restauración de volúmenes, hidratación desde adentro y definición natural de
+                contornos. Con técnica de microcánula para mayor seguridad y resultados
+                que duran hasta 18 meses.
+              </p>
+              <div class="treatment-card__footer">
+                <span class="treatment-card__duration">
+                  <i class="bi bi-clock"></i> 30–45 min
+                </span>
+                <a href="#contacto" class="treatment-card__link">
+                  Consultar <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tratamiento 3 -->
+          <article class="treatment-card">
+            <div class="treatment-card__img-wrap">
+              <img
+                src="assets/img/laser.png"
+                alt="Tratamientos con láser en Lumis Clínica Estética"
+                class="treatment-card__img"
+                loading="lazy"
+              />
+            </div>
+            <div class="treatment-card__body">
+              <span class="tag">Tecnología láser</span>
+              <h3 class="treatment-card__name">Tratamientos con láser</h3>
+              <p class="treatment-card__desc">
+                Manchas, poros, cicatrices, rojeces y depilación definitiva tratados con
+                equipos certificados de última generación. Resultados precisos, seguros
+                y medibles en pocas sesiones.
+              </p>
+              <div class="treatment-card__footer">
+                <span class="treatment-card__duration">
+                  <i class="bi bi-clock"></i> 45–60 min
+                </span>
+                <a href="#contacto" class="treatment-card__link">
+                  Consultar <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tratamiento 4 -->
+          <article class="treatment-card">
+            <div class="treatment-card__img-wrap">
+              <img
+                src="assets/img/corporal.png"
+                alt="Tratamientos corporales en Lumis Clínica Estética Mendoza"
+                class="treatment-card__img"
+                loading="lazy"
+              />
+            </div>
+            <div class="treatment-card__body">
+              <span class="tag">Estética corporal</span>
+              <h3 class="treatment-card__name">Remodelación corporal</h3>
+              <p class="treatment-card__desc">
+                Reducción de medidas, tonificación muscular y tratamiento de celulitis
+                con ultrasonido focalizado y radiofrecuencia. Resultados progresivos y
+                sin intervención quirúrgica.
+              </p>
+              <div class="treatment-card__footer">
+                <span class="treatment-card__duration">
+                  <i class="bi bi-clock"></i> 60 min
+                </span>
+                <a href="#contacto" class="treatment-card__link">
+                  Consultar <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         BENEFICIOS DIFERENCIALES
+    ==================================================== -->
+    <section class="s-benefits" aria-labelledby="benefits-title">
+      <div class="container">
+        <div class="s-benefits__inner">
+
+          <!-- Lista de beneficios -->
+          <div class="fade-up">
+            <span class="section-label">Por qué elegir Lumis</span>
+            <h2 class="section-title" id="benefits-title">
+              La diferencia<br>
+              que <em>se nota</em>
+            </h2>
+            <p class="section-subtitle">
+              Somos una clínica médica, no un centro de estética. Esa distinción
+              cambia absolutamente todo lo que hacemos y cómo lo hacemos.
+            </p>
+
+            <div class="s-benefits__list">
+
+              <div class="benefit-item">
+                <span class="benefit-item__num">01</span>
+                <div>
+                  <span class="benefit-item__title">Consulta médica previa, siempre</span>
+                  <p class="benefit-item__desc">
+                    Analizamos tu historia clínica y tu piel antes de recomendar cualquier
+                    procedimiento. Nunca vendemos un tratamiento que no necesitás.
+                  </p>
+                </div>
+              </div>
+
+              <div class="benefit-item">
+                <span class="benefit-item__num">02</span>
+                <div>
+                  <span class="benefit-item__title">Resultados honestos, no promesas vacías</span>
+                  <p class="benefit-item__desc">
+                    Te explicamos exactamente qué podés esperar y en cuánto tiempo.
+                    Sin exageraciones ni resultados imposibles de sostener.
+                  </p>
+                </div>
+              </div>
+
+              <div class="benefit-item">
+                <span class="benefit-item__num">03</span>
+                <div>
+                  <span class="benefit-item__title">Seguimiento post-tratamiento incluido</span>
+                  <p class="benefit-item__desc">
+                    No terminamos cuando salís del consultorio. Acompañamos todo el proceso
+                    para garantizar que el resultado sea exactamente el esperado.
+                  </p>
+                </div>
+              </div>
+
+              <div class="benefit-item">
+                <span class="benefit-item__num">04</span>
+                <div>
+                  <span class="benefit-item__title">Te ves increíble, no «intervenida»</span>
+                  <p class="benefit-item__desc">
+                    Nuestra filosofía es realzar tu belleza natural. El resultado ideal
+                    es que se note el bienestar, nunca el procedimiento.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Imagen + stat -->
+          <div class="s-benefits__visual fade-up delay-2">
+            <img
+              src="assets/img/atención personal.png"
+              alt="Médica especialista de Lumis durante una consulta"
+              class="s-benefits__img"
+              loading="lazy"
+            />
+
+            <div class="s-benefits__stat">
+              <div class="stat-card">
+                <div class="stat-card__number" data-count="98" data-suffix="%">98%</div>
+                <p class="stat-card__desc">de pacientes recomendarían Lumis a alguien cercano</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         EQUIPO MÉDICO
+    ==================================================== -->
+    <section class="s-team" id="equipo" aria-labelledby="team-title">
+      <div class="container">
+
+        <div class="s-team__header fade-up">
+          <span class="section-label">Nuestros profesionales</span>
+          <h2 class="section-title" id="team-title">
+            Un equipo formado<br>
+            para <em>cuidarte bien</em>
+          </h2>
+          <p class="section-subtitle">
+            Médicos con posgrado en medicina estética, actualización permanente
+            y el compromiso de tratarte como el caso único que sos.
+          </p>
+        </div>
+
+        <div class="s-team__grid stagger">
+
+          <article class="team-card">
+            <div class="team-card__img-wrap">
+              <img
+                src="assets/img/dra. Valentina Ortiz.png"
+                alt="Dra. Valentina Ortiz, Directora Médica de Lumis"
+                class="team-card__img"
+                loading="lazy"
+              />
+              <div class="team-card__overlay" aria-hidden="true"></div>
+            </div>
+            <div class="team-card__body">
+              <h3 class="team-card__name">Dra. Valentina Ortiz</h3>
+              <p class="team-card__specialty">Directora Médica · Medicina Estética</p>
+              <p class="team-card__bio">
+                Médica graduada con honores (UNCuyo). Especialista en medicina estética
+                con formación en Buenos Aires y Barcelona. Más de 12 años de trayectoria
+                en el sector.
+              </p>
+            </div>
+          </article>
+
+          <article class="team-card">
+            <div class="team-card__img-wrap">
+              <img
+                src="assets/img/dr. Sebastián Molina.png"
+                alt="Dr. Sebastián Molina, especialista en dermatología estética"
+                class="team-card__img"
+                loading="lazy"
+              />
+              <div class="team-card__overlay" aria-hidden="true"></div>
+            </div>
+            <div class="team-card__body">
+              <h3 class="team-card__name">Dr. Sebastián Molina</h3>
+              <p class="team-card__specialty">Medicina Láser · Dermatología Estética</p>
+              <p class="team-card__bio">
+                Especialista en tecnología láser y tratamientos avanzados de piel.
+                Certificado en técnicas no invasivas de última generación.
+                Más de 3.000 procedimientos realizados.
+              </p>
+            </div>
+          </article>
+
+          <article class="team-card">
+            <div class="team-card__img-wrap">
+              <img
+                src="assets/img/dra. Carolina Reyes.png"
+                alt="Dra. Carolina Reyes, especialista en estética corporal"
+                class="team-card__img"
+                loading="lazy"
+              />
+              <div class="team-card__overlay" aria-hidden="true"></div>
+            </div>
+            <div class="team-card__body">
+              <h3 class="team-card__name">Dra. Carolina Reyes</h3>
+              <p class="team-card__specialty">Estética Corporal · Bienestar Integral</p>
+              <p class="team-card__bio">
+                Médica con especialización en estética corporal y enfoque integral del
+                bienestar. Pionera en protocolos de remodelación no invasiva
+                en Cuyo.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         INSTALACIONES
+    ==================================================== -->
+    <section class="s-facilities" id="instalaciones" aria-labelledby="facilities-title">
+      <div class="container">
+        <div class="s-facilities__inner">
+
+          <!-- Galería -->
+          <div class="s-facilities__gallery fade-up">
+            <div class="gallery-item gallery-item--tall">
+              <img
+                src="assets/img/sala de espera.png"
+                alt="Sala de espera premium Lumis Clínica"
+                loading="lazy"
+              />
+              <div class="gallery-item__overlay" aria-hidden="true"></div>
+            </div>
+
+            <div class="gallery-item">
+              <img
+                src="assets/img/consultorio.png"
+                alt="Consultorio de tratamientos faciales"
+                loading="lazy"
+              />
+              <div class="gallery-item__overlay" aria-hidden="true"></div>
+            </div>
+
+            <div class="gallery-item">
+              <img
+                src="assets/img/equipamiento.png"
+                alt="Equipos tecnológicos de última generación"
+                loading="lazy"
+              />
+              <div class="gallery-item__overlay" aria-hidden="true"></div>
+            </div>
+          </div>
+
+          <!-- Contenido -->
+          <div class="fade-up delay-1">
+            <span class="section-label">Nuestras instalaciones</span>
+            <h2 class="section-title" id="facilities-title">
+              Un espacio pensado<br>
+              para tu <em>tranquilidad</em>
+            </h2>
+            <p class="section-subtitle">
+              Desde el primer paso que das en la clínica hasta que terminás tu tratamiento,
+              cada detalle del espacio está diseñado para que te sientas segura, cómoda
+              y en confianza total.
+            </p>
+
+            <div class="s-facilities__tags">
+              <span class="facility-tag">
+                <i class="bi bi-building-check"></i> Habilitación sanitaria
+              </span>
+              <span class="facility-tag">
+                <i class="bi bi-award"></i> Equipos certificados
+              </span>
+              <span class="facility-tag">
+                <i class="bi bi-shield-lock"></i> Privacidad total
+              </span>
+              <span class="facility-tag">
+                <i class="bi bi-universal-access"></i> Acceso inclusivo
+              </span>
+              <span class="facility-tag">
+                <i class="bi bi-p-circle"></i> Estacionamiento
+              </span>
+              <span class="facility-tag">
+                <i class="bi bi-wifi"></i> WiFi disponible
+              </span>
+            </div>
+
+            <div style="margin-top: 36px;">
+              <a href="#contacto" class="btn btn--primary">
+                <i class="bi bi-geo-alt"></i> Cómo llegar
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         TESTIMONIOS
+    ==================================================== -->
+    <section class="s-testimonials" id="testimonios" aria-labelledby="testimonials-title">
+      <div class="container">
+
+        <div class="s-testimonials__header fade-up">
+          <span class="section-label">Testimonios</span>
+          <h2 class="section-title section-title--light" id="testimonials-title">
+            Lo que dicen quienes<br>
+            <em>ya confiaron en nosotros</em>
+          </h2>
+          <p class="section-subtitle section-subtitle--light">
+            Resultados reales, pacientes reales. Sin filtros ni exageraciones.
+          </p>
+        </div>
+
+        <div class="s-testimonials__grid stagger">
+
+          <blockquote class="testimonial-card">
+            <div class="testimonial-card__stars" aria-label="5 estrellas">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="testimonial-card__text">
+              "Vine con mucho miedo a hacerme rellenos y la Dra. Ortiz me explicó cada
+              paso con una paciencia increíble. El resultado es tan natural que mi propio
+              marido tardó semanas en darse cuenta."
+            </p>
+            <footer class="testimonial-card__author">
+              <div class="testimonial-card__avatar">
+                <img
+                  src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=200&h=200&q=80&auto=format&fit=crop&crop=face"
+                  alt="Marcela G., paciente de Lumis"
+                  loading="lazy"
+                />
+              </div>
+              <div>
+                <p class="testimonial-card__name">Marcela G.</p>
+                <p class="testimonial-card__treatment">Rellenos · Ácido hialurónico</p>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card">
+            <div class="testimonial-card__stars" aria-label="5 estrellas">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="testimonial-card__text">
+              "Después de 3 sesiones de láser, mis manchas del sol prácticamente
+              desaparecieron. Lo que más valoro es la honestidad: me dijeron exactamente
+              qué esperar y fue exactamente eso."
+            </p>
+            <footer class="testimonial-card__author">
+              <div class="testimonial-card__avatar">
+                <img
+                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&q=80&auto=format&fit=crop&crop=face"
+                  alt="Patricia M., paciente de Lumis"
+                  loading="lazy"
+                />
+              </div>
+              <div>
+                <p class="testimonial-card__name">Patricia M.</p>
+                <p class="testimonial-card__treatment">Láser despigmentante · 3 sesiones</p>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card">
+            <div class="testimonial-card__stars" aria-label="5 estrellas">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="testimonial-card__text">
+              "Fui con desconfianza, soy hombre y no sabía si era el lugar para mí.
+              Me atendieron genial, sin juzgar nada. El resultado del rejuvenecimiento
+              fue exactamente lo que buscaba: verme descansado, no «retocado»."
+            </p>
+            <footer class="testimonial-card__author">
+              <div class="testimonial-card__avatar">
+                <img
+                  src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&q=80&auto=format&fit=crop&crop=face"
+                  alt="Andrés R., paciente de Lumis"
+                  loading="lazy"
+                />
+              </div>
+              <div>
+                <p class="testimonial-card__name">Andrés R.</p>
+                <p class="testimonial-card__treatment">Rejuvenecimiento facial integral</p>
+              </div>
+            </footer>
+          </blockquote>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         CTA FUERTE
+    ==================================================== -->
+    <section class="s-cta" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="s-cta__inner fade-up">
+          <h2 class="s-cta__title" id="cta-title">
+            El momento de sentirte<br>
+            <em>increíble</em> es ahora.
+          </h2>
+          <p class="s-cta__subtitle">
+            Agendá tu consulta gratuita hoy. Sin compromiso, sin presiones.
+            Solo una conversación honesta sobre tus objetivos y las mejores
+            opciones disponibles para vos.
+          </p>
+          <div class="s-cta__btns">
+            <a href="#contacto" class="btn btn--white">
+              <i class="bi bi-calendar-check"></i>
+              Reservar consulta gratuita
+            </a>
+            <a
+              href="https://wa.me/5492612000000?text=Hola%2C%20quiero%20reservar%20una%20consulta%20gratuita%20en%20Lumis%20Cl%C3%ADnica%20Est%C3%A9tica."
+              class="btn btn--outline-light"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="bi bi-whatsapp"></i>
+              Escribirnos por WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         PREGUNTAS FRECUENTES
+    ==================================================== -->
+    <section class="s-faq" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="s-faq__inner">
+
+          <div class="s-faq__side fade-up">
+            <span class="section-label">FAQ</span>
+            <h2 class="section-title" id="faq-title">
+              Preguntas<br>
+              <em>frecuentes</em>
+            </h2>
+            <p class="section-subtitle">
+              Sabemos que antes de dar el primer paso surgen dudas.
+              Acá respondemos las más comunes con total honestidad.
+            </p>
+            <div style="margin-top: 28px;">
+              <a
+                href="https://wa.me/5492612000000?text=Hola%2C%20tengo%20una%20consulta%20sobre%20los%20tratamientos%20de%20Lumis."
+                class="btn btn--outline-dark"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="bi bi-whatsapp"></i>
+                Consultar por WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <div class="fade-up delay-1">
+            <div class="faq-item open">
+              <button class="faq-item__btn" aria-expanded="true">
+                ¿La primera consulta tiene costo?
+                <span class="faq-item__icon" aria-hidden="true">
+                  <i class="bi bi-plus-lg"></i>
+                </span>
+              </button>
+              <div class="faq-item__answer">
+                <p>
+                  La primera consulta médica es completamente gratuita y sin compromiso.
+                  La médica evaluará tu situación, escuchará tus objetivos y te presentará
+                  las opciones más adecuadas. Solo seguimos si vos querés.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-item__btn" aria-expanded="false">
+                ¿Los tratamientos duelen?
+                <span class="faq-item__icon" aria-hidden="true">
+                  <i class="bi bi-plus-lg"></i>
+                </span>
+              </button>
+              <div class="faq-item__answer">
+                <p>
+                  La mayoría tienen mínimas molestias. Usamos cremas anestésicas tópicas
+                  cuando es necesario y técnicas con microcánula que reducen notablemente
+                  la incomodidad. Nuestros pacientes describen la experiencia como muy tolerable.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-item__btn" aria-expanded="false">
+                ¿Cuánto tiempo duran los resultados?
+                <span class="faq-item__icon" aria-hidden="true">
+                  <i class="bi bi-plus-lg"></i>
+                </span>
+              </button>
+              <div class="faq-item__answer">
+                <p>
+                  Depende del tratamiento. Los rellenos con ácido hialurónico duran entre
+                  9 y 18 meses. Los tratamientos con láser pueden ser permanentes para manchas
+                  y depilación. En tu consulta te explicamos exactamente qué esperar en cada caso.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-item__btn" aria-expanded="false">
+                ¿Necesito días de recuperación?
+                <span class="faq-item__icon" aria-hidden="true">
+                  <i class="bi bi-plus-lg"></i>
+                </span>
+              </button>
+              <div class="faq-item__answer">
+                <p>
+                  La mayoría de nuestros tratamientos son ambulatorios: podés retomar tu actividad
+                  inmediatamente. Algunos pueden generar leve enrojecimiento por 24 a 48 horas.
+                  Siempre te damos indicaciones detalladas post-tratamiento.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-item__btn" aria-expanded="false">
+                ¿Atienden los sábados?
+                <span class="faq-item__icon" aria-hidden="true">
+                  <i class="bi bi-plus-lg"></i>
+                </span>
+              </button>
+              <div class="faq-item__answer">
+                <p>
+                  Sí. Atendemos de lunes a viernes de 9 a 20 h y los sábados de 9 a 14 h.
+                  También podés escribirnos por WhatsApp en cualquier momento para coordinar
+                  un turno que se adapte a tu disponibilidad.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-item__btn" aria-expanded="false">
+                ¿Cómo puedo pagar?
+                <span class="faq-item__icon" aria-hidden="true">
+                  <i class="bi bi-plus-lg"></i>
+                </span>
+              </button>
+              <div class="faq-item__answer">
+                <p>
+                  Aceptamos efectivo, transferencia, débito y todas las tarjetas de crédito
+                  principales con cuotas sin interés. Consultanos por las opciones de financiación
+                  disponibles según el tratamiento.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         CONTACTO
+    ==================================================== -->
+    <section class="s-contact" id="contacto" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="s-contact__inner">
+
+          <!-- Info + Mapa -->
+          <div class="fade-up">
+            <span class="section-label">Dónde encontrarnos</span>
+            <h2 class="section-title" id="contact-title">
+              Estamos en<br>
+              <em>el corazón</em> de Mendoza
+            </h2>
+            <p class="section-subtitle">
+              Visitanos o escribinos. Estamos para responder tus dudas y acompañarte
+              desde el primer contacto.
+            </p>
+
+            <div class="s-contact__details">
+
+              <div class="contact-detail">
+                <div class="contact-detail__icon">
+                  <i class="bi bi-geo-alt-fill"></i>
+                </div>
+                <div>
+                  <span class="contact-detail__label">Dirección</span>
+                  <span class="contact-detail__value">
+                    Av. San Martín 1250, Piso 3<br>Ciudad de Mendoza, M5500
+                  </span>
+                </div>
+              </div>
+
+              <div class="contact-detail">
+                <div class="contact-detail__icon">
+                  <i class="bi bi-whatsapp"></i>
+                </div>
+                <div>
+                  <span class="contact-detail__label">WhatsApp</span>
+                  <span class="contact-detail__value">
+                    <a href="https://wa.me/5492612000000" target="_blank" rel="noopener noreferrer">
+                      +54 9 261 200-0000
+                    </a>
+                  </span>
+                </div>
+              </div>
+
+              <div class="contact-detail">
+                <div class="contact-detail__icon">
+                  <i class="bi bi-envelope-fill"></i>
+                </div>
+                <div>
+                  <span class="contact-detail__label">Email corporativo</span>
+                  <span class="contact-detail__value">
+                    <a href="mailto:consultas@lumisclinica.com.ar">
+                      consultas@lumisclinica.com.ar
+                    </a>
+                  </span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Horarios -->
+            <div class="schedule-block" style="margin-top: 24px;">
+              <p class="schedule-block__title">Horarios de atención</p>
+              <div class="schedule-block__row">
+                <span>Lunes a Viernes</span>
+                <span>09:00 – 20:00 h</span>
+              </div>
+              <div class="schedule-block__row">
+                <span>Sábados</span>
+                <span>09:00 – 14:00 h</span>
+              </div>
+              <div class="schedule-block__row">
+                <span>Domingos y feriados</span>
+                <span>Cerrado</span>
+              </div>
+            </div>
+
+            <!-- Google Maps embed -->
+            <div class="s-contact__map">
+              <!--
+                Iframe de Google Maps — Av. San Martín, Mendoza Capital.
+                URL real, sin API key requerida para embed básico.
+              -->
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.0!2d-68.8458!3d-32.8895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e09a522872133%3A0x85f0000000000000!2sAv.%20San%20Mart%C3%ADn%201250%2C%20Ciudad%20de%20Mendoza!5e0!3m2!1ses!2sar!4v1700000000000"
+                title="Ubicación de Lumis Clínica Estética en Mendoza"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+
+          <!-- Acciones de contacto -->
+          <div class="fade-up delay-1">
+            <span class="section-label">Contacto directo</span>
+            <h3 style="font-family: var(--font-display); font-size: 2rem; font-weight: 300; margin-bottom: 14px; line-height: 1.2;">
+              ¿Listo para dar<br>
+              el primer paso?
+            </h3>
+            <p style="font-size: 0.95rem; color: var(--gray-600); line-height: 1.7; margin-bottom: 32px;">
+              La consulta inicial es gratuita. Sin turnos largos, sin burocracia.
+              Escribinos y coordinamos el horario que mejor te venga.
+            </p>
+
+            <div class="s-contact__actions">
+              <a
+                href="https://wa.me/5492612000000?text=Hola%20Lumis%2C%20quiero%20reservar%20una%20consulta%20gratuita."
+                class="btn btn--whatsapp"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="bi bi-whatsapp"></i>
+                Reservar por WhatsApp
+              </a>
+              <a
+                href="https://instagram.com/lumisclinica"
+                class="btn btn--outline-dark"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="bi bi-instagram"></i>
+                Seguinos en Instagram
+              </a>
+            </div>
+
+            <div style="margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--gray-200);">
+              <p style="font-size: 12px; color: var(--gray-400); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 14px;">
+                También en redes
+              </p>
+              <div class="s-contact__social">
+                <a
+                  href="https://instagram.com/lumisclinica"
+                  class="social-btn"
+                  aria-label="Instagram de Lumis"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="bi bi-instagram"></i>
+                </a>
+                <a
+                  href="https://facebook.com/lumisclinica"
+                  class="social-btn"
+                  aria-label="Facebook de Lumis"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="bi bi-facebook"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Garantía de respuesta -->
+            <div style="
+              margin-top: 32px;
+              background: var(--sage-pale);
+              border-radius: var(--radius-sm);
+              padding: 18px 20px;
+              display: flex;
+              gap: 14px;
+              align-items: flex-start;
+            ">
+              <i class="bi bi-lightning-charge-fill" style="color: var(--sage-deep); font-size: 1.2rem; flex-shrink: 0; margin-top: 2px;"></i>
+              <div>
+                <p style="font-size: 13px; font-weight: 500; color: var(--dark); margin-bottom: 4px;">
+                  Respondemos en menos de 2 horas
+                </p>
+                <p style="font-size: 12px; color: var(--gray-600); line-height: 1.5;">
+                  En horario de atención, garantizamos respuesta rápida a todos
+                  los mensajes de WhatsApp.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+
+      <div class="footer__inner">
+
+        <div class="footer__brand">
+          <a href="#inicio" class="navbar__logo" aria-label="Lumis Clínica Estética">
+            Lumis<span>.</span>
+          </a>
+          <p class="footer__tagline">
+            Medicina estética avanzada en Mendoza. Resultados naturales
+            con respaldo médico certificado.
+          </p>
+          <div class="footer__social">
+            <a
+              href="https://instagram.com/lumisclinica"
+              class="social-btn"
+              aria-label="Instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a
+              href="https://facebook.com/lumisclinica"
+              class="social-btn"
+              aria-label="Facebook"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a
+              href="https://wa.me/5492612000000"
+              class="social-btn"
+              aria-label="WhatsApp"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="bi bi-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4>Tratamientos</h4>
+          <ul>
+            <li><a href="#tratamientos">Rejuvenecimiento facial</a></li>
+            <li><a href="#tratamientos">Ácido hialurónico</a></li>
+            <li><a href="#tratamientos">Tratamientos láser</a></li>
+            <li><a href="#tratamientos">Remodelación corporal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>La clínica</h4>
+          <ul>
+            <li><a href="#equipo">Equipo médico</a></li>
+            <li><a href="#instalaciones">Instalaciones</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#faq">Preguntas frecuentes</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Contacto</h4>
+          <ul>
+            <li><a href="https://wa.me/5492612000000" target="_blank" rel="noopener noreferrer">+54 9 261 200-0000</a></li>
+            <li><a href="mailto:consultas@lumisclinica.com.ar">consultas@lumisclinica.com.ar</a></li>
+            <li><a href="#contacto">Cómo llegar</a></li>
+            <li>
+              <a href="https://wa.me/5492612000000?text=Hola%2C%20quiero%20reservar%20una%20consulta." target="_blank" rel="noopener noreferrer">
+                Reservar turno
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">
+          © 2025 Lumis Clínica Estética · Mendoza, Argentina.
+          Todos los derechos reservados.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts modulares -->
+  <script src="assets/js/navbar.js" defer></script>
+  <script src="assets/js/faq.js" defer></script>
+  <script src="assets/js/animations.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,224 @@
+/* ============================================================
+   BASE.CSS — Variables, Reset, Tipografía, Utilidades
+   Lumis Clínica Estética · Portfolio Project
+   ============================================================ */
+
+/* ── Google Fonts ─────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap');
+
+/* ── Variables ────────────────────────────────────────────── */
+:root {
+  /* Paleta principal */
+  --white:        #ffffff;
+  --sage:         #8faf8f;
+  --sage-light:   #b8cfb8;
+  --sage-pale:    #eef4ee;
+  --sage-mid:     #d4e4d4;
+  --sage-dark:    #5a7a5a;
+  --sage-deep:    #3d5c3d;
+
+  /* Grises */
+  --gray-50:      #fafaf8;
+  --gray-100:     #f4f4f1;
+  --gray-200:     #e8e8e4;
+  --gray-400:     #b0b0aa;
+  --gray-600:     #6a6a64;
+  --gray-900:     #1a1a18;
+
+  /* Dark */
+  --dark:         #141412;
+  --dark-soft:    #242420;
+
+  /* Tipografía */
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body:    'Jost', system-ui, sans-serif;
+
+  /* Espaciado */
+  --space-xs:     8px;
+  --space-sm:     16px;
+  --space-md:     24px;
+  --space-lg:     40px;
+  --space-xl:     64px;
+  --space-2xl:    100px;
+
+  /* Bordes */
+  --radius-sm:    8px;
+  --radius:       16px;
+  --radius-lg:    24px;
+
+  /* Sombras */
+  --shadow-xs:    0 2px 12px rgba(0,0,0,0.05);
+  --shadow-sm:    0 4px 24px rgba(0,0,0,0.07);
+  --shadow-md:    0 8px 40px rgba(0,0,0,0.10);
+  --shadow-lg:    0 16px 64px rgba(0,0,0,0.12);
+
+  /* Transiciones */
+  --ease:         cubic-bezier(0.4, 0, 0.2, 1);
+  --transition:   all 0.35s var(--ease);
+  --transition-fast: all 0.2s var(--ease);
+
+  /* Layout */
+  --container:    1240px;
+  --navbar-h:     80px;
+}
+
+/* ── Reset ────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: 300;
+  color: var(--dark);
+  background: var(--white);
+  line-height: 1.65;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img, video {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol { list-style: none; }
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input, select, textarea {
+  font-family: var(--font-body);
+}
+
+/* ── Tipografía base ──────────────────────────────────────── */
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 300;
+  line-height: 1.1;
+}
+
+p { line-height: 1.7; }
+
+/* ── Container ────────────────────────────────────────────── */
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+/* ── Etiquetas de sección ─────────────────────────────────── */
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--sage-dark);
+  margin-bottom: var(--space-sm);
+}
+
+.section-label::before {
+  content: '';
+  display: block;
+  width: 28px;
+  height: 1px;
+  background: var(--sage);
+}
+
+/* ── Títulos de sección ───────────────────────────────────── */
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.5vw, 3.2rem);
+  font-weight: 300;
+  color: var(--dark);
+  line-height: 1.12;
+}
+
+.section-title em {
+  font-style: italic;
+  color: var(--sage-dark);
+}
+
+.section-title--light {
+  color: var(--white);
+}
+
+.section-title--light em {
+  color: var(--sage-light);
+}
+
+/* ── Subtítulo ────────────────────────────────────────────── */
+.section-subtitle {
+  font-size: 0.975rem;
+  font-weight: 300;
+  color: var(--gray-600);
+  line-height: 1.75;
+  max-width: 540px;
+  margin-top: 14px;
+}
+
+.section-subtitle--light {
+  color: rgba(255,255,255,0.65);
+}
+
+/* ── Animaciones de entrada ───────────────────────────────── */
+.fade-up {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-up.delay-1 { transition-delay: 0.1s; }
+.fade-up.delay-2 { transition-delay: 0.2s; }
+.fade-up.delay-3 { transition-delay: 0.3s; }
+
+/* ── Scroll reveal stagger ────────────────────────────────── */
+.stagger > * {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s var(--ease), transform 0.6s var(--ease);
+}
+
+.stagger.visible > *:nth-child(1) { opacity: 1; transform: none; transition-delay: 0s; }
+.stagger.visible > *:nth-child(2) { opacity: 1; transform: none; transition-delay: 0.1s; }
+.stagger.visible > *:nth-child(3) { opacity: 1; transform: none; transition-delay: 0.2s; }
+.stagger.visible > *:nth-child(4) { opacity: 1; transform: none; transition-delay: 0.3s; }
+
+/* ── Separador decorativo ─────────────────────────────────── */
+.divider {
+  width: 48px;
+  height: 1px;
+  background: var(--sage);
+  display: block;
+  margin: var(--space-md) 0;
+}
+
+.divider--center { margin-left: auto; margin-right: auto; }
