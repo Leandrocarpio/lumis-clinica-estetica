@@ -16,7 +16,8 @@
 
 **[👉 Ver la landing page en vivo →](https://leandrocarpio.github.io/lumis-clinica-estetica/)**
 
-![Lumis Clínica Estética — Hero](assets/img/hero-desktop.jpg)
+![Lumis Clínica Estética — Hero]([assets/img/hero-desktop.jpg](https://images.unsplash.com/photo-1570172619644-dfd03ed5d881
+))
 
 ---
 
